@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/img_1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:layout_gravity="right" android:orientation="vertical" android:padding="25dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/height_30dp" android:elevation="5dp">
+                <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Welcome to soliteck business portal" android:layout_centerInParent="true"/>
+                <TextView android:textSize="30dp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_size_10" android:text="Log In !"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin20dp" android:layout_marginTop="@dimen/size40dp" android:layout_marginRight="@dimen/margin20dp" android:layout_marginBottom="@dimen/margin20dp" app:cardCornerRadius="@dimen/padding_5" app:cardElevation="@dimen/dp_size_10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/margin_15dp">
+
+                        <ImageView
+                            android:id="@+id/image_logo"
+                            android:layout_width="250dp"
+                            android:layout_height="100dp"
+                            android:padding="@dimen/margin_5dp"
+                            android:src="@drawable/app_logo1" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="25dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <EditText
+                                    android:id="@+id/edit_username"
+                                    android:layout_width="338dp"
+                                    android:layout_height="55dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/border_edittext"
+                                    android:hint="soliteck@gmail.com"
+                                    android:inputType="number"
+                                    android:maxLength="10"
+                                    android:paddingLeft="10dp"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:background="@color/white"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:text="UserName"
+                                    android:textColor="@color/black" />
+                            </RelativeLayout>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="15dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/border_edittext"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:weightSum="3">
+
+                                    <EditText
+                                        android:id="@+id/edit_password"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="2.6"
+                                        android:background="@android:color/transparent"
+                                        android:hint="abc@123456789"
+                                        android:inputType="textPassword"
+                                        android:paddingLeft="10dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp" />
+
+                                    <CheckBox
+                                        android:id="@+id/show_password"
+                                        android:layout_width="20dp"
+                                        android:layout_height="48dp"
+                                        android:layout_weight="0.3" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:background="@color/white"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:text="Password"
+                                    android:textColor="@color/black" />
+                                <!--                            <TextView android:textColor="@color/black" android:background="@color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Password" android:inputType="number"/>-->
+                            </RelativeLayout>
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <CheckBox
+                                android:id="@+id/checkbox_remember"
+                                android:layout_width="10dp"
+                                android:layout_height="48dp"
+                                android:layout_weight="1"
+                                android:text="Remember" />
+
+                            <TextView
+                                android:id="@+id/text_forgot_password"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@+id/checkbox"
+                                android:layout_alignParentRight="true"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Forgot Password?"
+                                android:textColor="@color/theme_color"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/btn_login"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="@dimen/dp_size_10"
+                            android:background="@drawable/violet_button_background"
+                            android:elevation="5dp">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="Sign In to proceed"
+                                android:textColor="@color/white"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

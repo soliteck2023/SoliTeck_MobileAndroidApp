@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+<style name="AppTheme_PopupOverlay" parent="@style/ThemeOverlay.AppCompat.Light"></style>
+<style name="AppTheme_AppBarOverlay" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar"></style>
+</resources>
+
